@@ -1,0 +1,7 @@
+# mount point       fstype    device                                                                flags
+/system     ext4     /dev/block/platform/soc/624000.ufshc/by-name/system       flags=display="System";backup=1;slotselect
+/radio      vfat     /dev/block/platform/soc/624000.ufshc/by-name/modem        flags=display="Radio";slotselect
+/data       ext4     /dev/block/platform/soc/624000.ufshc/by-name/userdata     flags=display="Data"
+none        swap     /dev/block/zram0                                          flags=display="None"
+/misc       emmc     /dev/block/platform/soc/624000.ufshc/by-name/misc         flags=display="Misc";backup=1;flashimg=1
+/usb*       auto     vfat                                                      flags=display="Usb*";logical
