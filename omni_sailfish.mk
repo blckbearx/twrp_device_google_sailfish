@@ -13,6 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from sailfish device
 $(call inherit-product, device/google/sailfish/device.mk)
 
+# Inherit from sailfish vendor
+$(call inherit-product, vendor/google_devices/marlin/device-vendor-sailfish.mk)
+
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
